@@ -1,11 +1,10 @@
-from src.order_service import create_order
 import pytest
+from src.order_service import create_order_for_user
 
 def test_create_order():
-    user = {"name": "Badhon"}
-    order = create_order(user, "Laptop")
+    order = create_order_for_user("Badhon", "Laptop")
     assert order["item"] == "Laptop"
 
 def test_invalid_order():
     with pytest.raises(ValueError):
-        create_order(None, None)
+        create_order_for_user("", "")
