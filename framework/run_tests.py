@@ -59,9 +59,9 @@ def run_tests():
     flaky = len(set(results)) > 1  # if results differ → flaky
 
     if flaky:
-        print("\n⚠️ Flaky tests detected!")
+        print("\nFlaky tests detected!")
     else:
-        print("\n✅ No flaky tests detected")
+        print("\nNo flaky tests detected")
 
     save_report(passed, failed, flaky)
 
