@@ -8,7 +8,7 @@ This project implements an automated software testing framework that supports:
 * Integration Testing
 * System Testing
 
-The framework also includes test execution, flaky test detection, and visualization of results.
+The framework also includes test execution, flaky test detection, visualization of results and a web dashboard.
 
 ## Objectives
 
@@ -36,6 +36,7 @@ This project follows a full-stack testing approach:
 pip install -r requirements.txt
 python framework/run_tests.py
 python framework/visualizer.py
+python dashboard/app.py
 ```
 
 ## Features
@@ -44,13 +45,8 @@ python framework/visualizer.py
 * Flaky test detection
 * Graph visualization
 * Test reporting
+* Web dashboard
 
 ## Report
 
 Detailed report is available in the /docs folder.
-
-## References
-
-* Software Testing: A Craftsman’s Approach
-* Full Stack Testing
-* Software Testing with Generative AI
